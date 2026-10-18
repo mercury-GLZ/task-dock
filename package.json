@@ -1,0 +1,55 @@
+{
+  "name": "@local/background-jobs-panel",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Task Dock: a background-task dock for the DeepSeek Harness Web UI with progress, live output, one-click pause/resume, stop, and failure reasons.",
+  "license": "MIT",
+  "author": "水星计划 <mercury-project@users.noreply.gitee.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/mercury-project/task-dock.git"
+  },
+  "homepage": "https://gitee.com/mercury-project/task-dock#readme",
+  "bugs": {
+    "url": "https://gitee.com/mercury-project/task-dock/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "background-jobs",
+    "task-manager",
+    "pause-resume"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-job-controller",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

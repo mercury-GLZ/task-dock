@@ -1,0 +1,4 @@
+- insert:
+    - id: background-jobs-panel
+      name: '@local/background-jobs-panel'
+      config: {}
