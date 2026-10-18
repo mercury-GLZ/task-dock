@@ -23,7 +23,7 @@
       "author": "mercury-project",
       "homepage": "https://gitee.com/mercury-project/task-dock",
       "repository": {
-        "url": "https://github.com/mercury-GLZ/task-dock"
+        "url": "https://gitee.com/mercury-project/task-dock"
       },
       "metadata": {
         "keywords": [
@@ -40,7 +40,7 @@
           "publishTimestamp": 1792335272,
           "source": {
             "type": "git",
-            "url": "https://github.com/mercury-GLZ/task-dock",
+            "url": "https://gitee.com/mercury-project/task-dock",
             "commit": "1a7b8f8ec5ac5c1dd2d906251df72d00ca3bb906"
           }
         }
