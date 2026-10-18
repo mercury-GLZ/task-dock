@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "任务坞插件市场",
+    "en": "Task Dock Market"
+  },
+  "description": {
+    "zh": "DeepSeek Harness 的第三方插件索引，由 mercury-project 维护。",
+    "en": "Third-party plugin index for DeepSeek Harness, maintained by mercury-project."
+  },
+  "plugins": [
+    {
+      "name": "@local/background-jobs-panel",
+      "title": {
+        "zh": "任务坞",
+        "en": "Task Dock"
+      },
+      "description": {
+        "zh": "后台任务面板：进度可视化、一键暂停/继续、失败原因一目了然。",
+        "en": "Background-task dock: progress, one-click pause/resume, and failure reasons."
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJCYWNrZ3JvdW5kIHRhc2tzIj4KICA8cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSIxNCIgZmlsbD0iIzFmMmE0NCIvPgogIDxyZWN0IHg9IjE0IiB5PSIxOCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZmIzZmYiLz4KICA8cmVjdCB4PSIxNCIgeT0iMjkuNSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM0YTg2ZTgiLz4KICA8cmVjdCB4PSIxNCIgeT0iNDEiIHdpZHRoPSIzNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2ZiM2ZmIi8+CiAgPGNpcmNsZSBjeD0iNDgiIGN5PSIyMC41IiByPSI0IiBmaWxsPSIjNGFkZTgwIi8+Cjwvc3ZnPgo=",
+      "author": "mercury-project",
+      "homepage": "https://gitee.com/mercury-project/task-dock",
+      "repository": {
+        "url": "https://github.com/mercury-GLZ/task-dock"
+      },
+      "metadata": {
+        "keywords": [
+          "deepseek",
+          "dsh",
+          "background-jobs",
+          "task-manager",
+          "pause-resume"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1792335272,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/mercury-GLZ/task-dock",
+            "commit": "1a7b8f8ec5ac5c1dd2d906251df72d00ca3bb906"
+          }
+        }
+      ]
+    }
+  ]
+}
