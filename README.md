@@ -112,6 +112,9 @@ https://gitee.com/mercury-project/task-dock/raw/main/market/index.json
 2. **设置 → 插件 → Discover** → 添加上面的索引地址；
 3. 在列表中点「任务坞」安装，再重启。
 
+遇到「Discover 空白 / 没有 `plugin_market` 工具」的情况，见
+[插件市场故障排查](docs/market-troubleshooting.md)。
+
 ### 方式对比
 
 | 方式 | 用户操作 | 需要维护者发布 | 升级方式 |
