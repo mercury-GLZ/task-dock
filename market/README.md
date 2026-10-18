@@ -1,5 +1,10 @@
 # 插件市场索引（format 1）
 
+> **当前状态（2026-10）**：索引本身已通过 DSH 官方 `parseMarketIndex` 校验，但
+> DSH 的市场功能目前在 npm 上只有实验性的 `0.2.1-alpha.4` bundle，与稳定版核心
+> `0.2.1-rc.2` 的依赖树不兼容（Host 半加载失败，Discover 页无数据）。等上游发布
+> rc.2 的市场 bundle 后，添加本索引即可使用，无需修改本文件。
+
 本目录的 `index.json` 就是 DSH 插件市场（Discover）可读取的索引文件，格式为官方 **format 1**。
 
 ## 用户怎么用

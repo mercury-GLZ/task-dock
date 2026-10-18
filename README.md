@@ -92,9 +92,25 @@ DSH 会用 pnpm 克隆该仓库并安装。这种方式得到的是**副本**：
 
 ### 方式 D：插件市场（Discover）
 
-DSH 的实验性市场功能：用户先安装 `@deepseek-ai/dsh-experimental-plugin-market-bundle`，
-再到 **设置 → 插件 → Discover** 添加维护者托管的市场索引。索引格式与流程见
-[PUBLISHING.md](PUBLISHING.md)。
+本仓库提供官方 **format 1** 的市场索引：[`market/index.json`](market/index.json)（已通过 DSH 的
+`parseMarketIndex` 校验）。
+
+索引地址：
+
+```text
+https://gitee.com/mercury-project/task-dock/raw/main/market/index.json
+```
+
+> **当前不可用（2026-10）**：DSH 的市场功能在 npm 上只有实验性 `0.2.1-alpha.4` bundle，
+> 与稳定版核心 `0.2.1-rc.2` 的依赖树不兼容，Host 半无法挂载，Discover 页没有数据。
+> 这是上游打包问题，与本索引无关。等上游发布 rc.2 市场 bundle 后，按
+> [market/README.md](market/README.md) 的步骤添加索引即可，无需改本仓库。
+
+配置步骤（上游修好后）：
+
+1. 安装市场 bundle `@deepseek-ai/dsh-experimental-plugin-market-bundle`，重启 Harness；
+2. **设置 → 插件 → Discover** → 添加上面的索引地址；
+3. 在列表中点「任务坞」安装，再重启。
 
 ### 方式对比
 
